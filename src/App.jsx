@@ -1,14 +1,21 @@
 import "./App.css";
+import Button from "./components/Button";
+import { Alert,Error,Warn,Success } from "./components/Alert";
 
 function App() {
   return (
     <div className="App">
+      <h1 className="Header=buttons">Button</h1>
       <div className="button-components-section">
-        {/* Render ตัว Button 2 แบบ */}
+        <Button style="#074EE8" Button="Button">ฺ</Button>
+        <Button style="#07A4E8" Button="Button">ฺ</Button>
       </div>
-      <hr />
       <div className="alert-components-section">
-        {/* Render ตัว Alert 4 แบบ */}
+        <h1 className="Header=buttons">Alert Component</h1>
+        <Error/>
+        <Warn/>
+        <Alert/>
+        <Success/>
       </div>
     </div>
   );
